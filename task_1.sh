@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-$username=$1 $directory=$2
+$username=$1,
+$directory=$2,
 output=$(getent passwd $username)
-if [ $username? -gt 0 ]; then
+if [ $? -eq 0 ]; then
     if [ -d $directory ]; then
-      sudo chmod $username:$username -R $directory
+      sudo chown $1:$1 -R $2
     fi
 else
-    echo "No, the user does not exist, to change owner forbidden, or directory $directory doesn't exist!"
+    echo "No, the user does not exist, to change owner forbidden, or directory $2 doesn't exist!"
 fi
-
 
