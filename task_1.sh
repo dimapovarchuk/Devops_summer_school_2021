@@ -8,5 +8,5 @@ if [ $username? -gt 0 ]; then
 else
     echo "No, the user does not exist, to change owner forbidden, or directory $directory doesn't exist!"
 fi
-echo
+
 
