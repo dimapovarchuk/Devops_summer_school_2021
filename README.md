@@ -9,7 +9,9 @@ $1 - should be existing user in your OS (in your script the checking block shoul
 $2 - should be only the directory (also need to be checked in your script)
 
   
-  Prepare Environment for deploying LMS Moodle (LAMP Stack)
+Task #2.1
+
+Prepare Environment for deploying LMS Moodle (LAMP Stack)
 
 Requirements
 1 server (2 GiB RAM, 1 vCPU, 10 GiB)
